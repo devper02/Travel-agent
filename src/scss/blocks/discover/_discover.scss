@@ -1,0 +1,44 @@
+.discover {
+  padding: 60px 0;
+}
+.discover__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 80px;
+
+  @include mediaTablet {
+    grid-template-columns: 1fr;
+  }
+}
+
+.discover__title {
+  margin-bottom: 24px;
+
+  @include mediaMobileM {
+    margin-bottom: 18px;
+  }
+}
+
+.discover__text {
+  margin-bottom: 40px;
+}
+
+.discover__picture {
+  position: relative;
+  @include mediaTablet {
+    display: none;
+  }
+}
+
+.discover__picture-hint {
+  z-index: 1;
+  position: absolute;
+  top: 90px;
+  left: 40px;
+
+  @include mediaTablet2 {
+    top: 40px;
+    left: 20px;
+  }
+}

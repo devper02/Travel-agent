@@ -1,0 +1,10 @@
+.btn-signup {
+  border-radius: 8px;
+  background: #181818;
+  padding: 8px 20px;
+  color: white;
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: #35aff4;
+  }
+}

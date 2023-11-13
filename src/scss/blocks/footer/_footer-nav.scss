@@ -1,0 +1,26 @@
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-nav__title {
+  font-size: 18px;
+  font-weight: 500;
+  height: 27px;
+  line-height: 150%; /* 27px */
+}
+.footer-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.footer-nav__list-item--link {
+  color: var(--text-white);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 150%; /* 27px */
+  transition: opacity 0.2s ease-in-out;
+  &:hover {
+    opacity: 0.33;
+  }
+}

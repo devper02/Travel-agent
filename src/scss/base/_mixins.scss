@@ -1,0 +1,47 @@
+@mixin mediaLaptop() {
+  @media (max-width: $laptop-size) {
+    @content;
+  }
+}
+
+@mixin mediaTablet() {
+  @media (max-width: $tablet-size) {
+    @content;
+  }
+}
+
+@mixin mediaTablet2() {
+  @media (max-width: $tablet-size2) {
+    @content;
+  }
+}
+
+@mixin mediaMobile() {
+  @media (max-width: $mobile-size) {
+    @content;
+  }
+}
+
+@mixin mediaMobile2() {
+  @media (max-width: $mobile-size2) {
+    @content;
+  }
+}
+
+@mixin mediaMobileL() {
+  @media (max-width: $mobileL-size) {
+    @content;
+  }
+}
+
+@mixin mediaMobileM() {
+  @media (max-width: $mobileM-size) {
+    @content;
+  }
+}
+
+@mixin mediaMobileS() {
+  @media (max-width: $mobileS-size) {
+    @content;
+  }
+}

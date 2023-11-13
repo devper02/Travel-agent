@@ -1,0 +1,30 @@
+:root {
+  --container-width: 1230px;
+  --container-padding: 15px;
+
+  --page-bg: #252526;
+  --text-color: #fff;
+
+  --font-main: "Circular Std", sans-serif;
+  --font-weight: 450;
+
+  --page-bg: #fff;
+  --text-color: #181818;
+  --black: #181818;
+  --footer-bg: var(--text-color);
+  --text-muted: #909090;
+  --text-white: #fff;
+  --text-white-2: #f0f0f0;
+  --accent: #35aff4;
+}
+
+// scss vars
+$laptop-size: 1439px;
+$tablet-size: 1024px;
+$tablet-size2: 1023px;
+$mobile-size: 778px;
+$mobile-size2: 768px;
+$mobileL-size: 425px;
+$mobileM-size: 375px;
+$mobileS-size: 320px;
+// scss vars

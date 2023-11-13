@@ -1,0 +1,77 @@
+.form {
+  display: grid;
+  padding: 12px 16px;
+  grid-template-columns: 1fr auto 1fr auto;
+  gap: 16px;
+  align-items: center;
+  border-radius: 16px;
+  border: 1px solid rgba(144, 144, 144, 0.3);
+  background: var(--page-bg);
+
+  @include mediaMobileL {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+.form__label {
+  padding-left: 36px;
+  display: grid;
+  gap: 8px;
+  span {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    @include mediaMobileS {
+      font-size: 15px;
+    }
+  }
+  background-image: url(./../img/icons/map.svg);
+  background-position: 0 0;
+  background-size: auto;
+  background-repeat: no-repeat;
+
+  &--calendar {
+    background-image: url(./../img/icons/calendar.svg);
+  }
+}
+
+.form__input {
+  font-size: 14px;
+  font-style: normal;
+  line-height: normal;
+  text-transform: capitalize;
+  &::placeholder {
+    color: var(--text-muted);
+
+    @include mediaMobileL {
+      font-size: 12px;
+    }
+  }
+}
+
+.form__devider {
+  width: 1px;
+  height: 24px;
+  background-color: var(--text-muted);
+  @include mediaMobileL {
+    display: none;
+  }
+}
+.form__btn {
+  border-radius: 10px;
+  background: #35aff4;
+  padding: 12px 16px;
+  transition: opacity 0.2s ease-in-out;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.form__btn-icon {
+  @include mediaTablet2 {
+    width: 24px;
+    height: 24px;
+  }
+}

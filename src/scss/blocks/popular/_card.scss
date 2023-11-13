@@ -1,0 +1,62 @@
+.card {
+  max-width: 304px;
+
+  @include mediaMobileM {
+    max-width: 280px;
+  }
+}
+
+.card__img {
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 16px;
+}
+.card__title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+.card__title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+
+  @include mediaMobileM {
+    font-size: 18px;
+  }
+}
+
+.card__rating {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-weight: 500;
+  line-height: 150%; /* 21px */
+  &::before {
+    display: block;
+    content: "";
+    width: 17px;
+    height: 16px;
+
+    background-image: url("./../../../img/icons/star-small.svg");
+    background-repeat: no-repeat;
+  }
+}
+.card__price {
+  color: var(--text-muted);
+  font-size: 16px;
+  font-weight: 450;
+  line-height: 150%; /* 24px */
+
+  @include mediaMobileM {
+    font-size: 14px;
+  }
+}
+
+.swiper-slide {
+  width: 304px !important;
+  height: 378px !important;
+}

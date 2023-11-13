@@ -1,0 +1,100 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--text-color);
+  font-family: var(--font-main);
+  font-weight: var(--font-weight);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dark {
+  background-color: var(--page-bg);
+  color: var(--text-color);
+}
+
+.title-1 {
+  color: var(--text-color);
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  &--decor {
+    position: relative;
+  }
+  &--decor::after {
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    width: 268px;
+    z-index: -1;
+    height: 24px;
+
+    background-image: url("./../img/discover/underline.svg");
+    background-repeat: no-repeat;
+  }
+
+  @include mediaTablet {
+    font-size: 56px;
+  }
+
+  @include mediaMobileL {
+    font-size: 48px;
+  }
+
+  @include mediaMobileM {
+    font-size: 44px;
+  }
+
+  @include mediaMobileS {
+    font-size: 38px;
+  }
+}
+
+.title-4 {
+  color: var(--text-muted);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 140%; /* 33.6px */
+
+  @include mediaMobileL {
+    text-shadow: 3px 2px 1px rgba(53, 175, 244, 0.6);
+  }
+}
+
+.text {
+  color: var(--text-muted);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: var(--font-weight);
+  line-height: 150%; /* 27px */
+  p + p {
+    margin-top: 1em;
+  }
+
+  @include mediaLaptop {
+    font-size: 16px;
+  }
+  @include mediaMobileL {
+    font-size: 15px;
+  }
+  @include mediaMobileM {
+    font-size: 14px;
+  }
+  @include mediaMobileS {
+    font-size: 12px;
+  }
+}
+
+.dollar {
+  font-weight: 500;
+  color: var(--accent);
+}
+.price {
+  font-weight: 500;
+  color: var(--text-color);
+}

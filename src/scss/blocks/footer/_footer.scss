@@ -1,0 +1,36 @@
+.footer {
+  background-color: var(--footer-bg);
+  padding: 80px 0;
+  color: #fff;
+}
+.footer__row {
+  display: grid;
+  gap: 128px;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+
+  @include mediaMobileL {
+    grid-template-columns: 1fr;
+    gap: 85px;
+  }
+}
+
+.footer__copyright {
+  display: grid;
+  gap: 24px;
+}
+.footer__copyright-text {
+  max-width: 300px;
+}
+
+.footer__copyright-text {
+  font-weight: 450;
+  line-height: 150%; /* 24px */
+}
+
+.footer-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}

@@ -1,0 +1,22 @@
+.partners {
+  padding: 60px 0;
+}
+.partners__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.partners__content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 34px;
+
+  @include mediaTablet {
+    gap: 10px;
+  }
+  @include mediaMobileL {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+}
